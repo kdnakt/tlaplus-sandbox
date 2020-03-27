@@ -17,7 +17,7 @@ vars == << alice_account, bob_account, money, pc >>
 Init == (* Global variables *)
         /\ alice_account = 10
         /\ bob_account = 10
-        /\ money = 5
+        /\ money \in 1..20
         /\ pc = "A"
 
 A == /\ pc = "A"
@@ -50,5 +50,5 @@ Termination == <>(pc = "Done")
 
 =============================================================================
 \* Modification History
-\* Last modified Fri Mar 27 20:09:08 JST 2020 by akito
+\* Last modified Fri Mar 27 20:09:32 JST 2020 by akito
 \* Created Wed Mar 25 09:15:22 JST 2020 by akito
