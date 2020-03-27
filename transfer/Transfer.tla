@@ -2,7 +2,7 @@
 EXTENDS Naturals, TLC
 
 (* --algorithm transfer
-variables alice_account = 10, bob_account = 10, money = 5;
+variables alice_account = 10, bob_account = 10, money \in 1..20;
 
 begin
 A: alice_account := alice_account - money;
@@ -50,5 +50,5 @@ Termination == <>(pc = "Done")
 
 =============================================================================
 \* Modification History
-\* Last modified Fri Mar 27 20:08:19 JST 2020 by akito
+\* Last modified Fri Mar 27 20:09:08 JST 2020 by akito
 \* Created Wed Mar 25 09:15:22 JST 2020 by akito
