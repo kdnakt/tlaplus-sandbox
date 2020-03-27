@@ -7,7 +7,7 @@ variables alice_account = 10, bob_account = 10, money = 5;
 begin
 A: alice_account := alice_account - money;
 B: bob_account := bob_account + money;
-
+C: assert alice_account >= 0;
 end algorithm *)
 \* BEGIN TRANSLATION
 VARIABLES alice_account, bob_account, money, pc
@@ -44,5 +44,5 @@ Termination == <>(pc = "Done")
 
 =============================================================================
 \* Modification History
-\* Last modified Fri Mar 27 20:02:18 JST 2020 by akito
+\* Last modified Fri Mar 27 20:07:00 JST 2020 by akito
 \* Created Wed Mar 25 09:15:22 JST 2020 by akito
