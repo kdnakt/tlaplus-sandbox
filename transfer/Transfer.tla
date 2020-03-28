@@ -57,7 +57,9 @@ Termination == <>(pc = "Done")
 
 \* END TRANSLATION
 
+MoneyNotNegative == money >= 0
+
 =============================================================================
 \* Modification History
-\* Last modified Fri Mar 27 23:24:49 JST 2020 by akito
+\* Last modified Sat Mar 28 10:23:13 JST 2020 by akito
 \* Created Wed Mar 25 09:15:22 JST 2020 by akito
