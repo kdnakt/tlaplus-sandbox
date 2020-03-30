@@ -2,7 +2,7 @@
 EXTENDS Integers
 
 (* --algorithm example
-variables x = 5
+variables x \in 1..5
 begin
  Add:
   x := x + 1;
@@ -13,7 +13,7 @@ VARIABLES x, pc
 vars == << x, pc >>
 
 Init == (* Global variables *)
-        /\ x = 5
+        /\ x \in 1..5
         /\ pc = "Add"
 
 Add == /\ pc = "Add"
@@ -33,5 +33,5 @@ Termination == <>(pc = "Done")
 \* END TRANSLATION
 =============================================================================
 \* Modification History
-\* Last modified Tue Mar 31 08:53:44 JST 2020 by akito
+\* Last modified Tue Mar 31 08:57:39 JST 2020 by akito
 \* Created Tue Mar 31 08:53:16 JST 2020 by akito
